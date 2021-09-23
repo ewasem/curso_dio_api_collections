@@ -16,4 +16,16 @@ fun main() {
     println("---------------")
     println("Salários maiores que 2000")
     salarioMaiorQue2000.forEach { println(it) }
+
+    println("---------------")
+
+    println(salarios.count {it in 2000.00 .. 5000.00})
+
+    println("---------------")
+
+    println(salarios.find {it == 3250.5})
+
+    println("---------------")
+
+    println(salarios.any {it == 1000.50})
 }
